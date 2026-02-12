@@ -1,0 +1,15 @@
+/* Styling the Navigation Bar*/
+
+.navbar ul {
+    list-style: none;
+    background: #333;
+    display: flex;
+}
+
+.navbar li a{
+    color: white;
+   padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
