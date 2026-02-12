@@ -7,9 +7,38 @@
 }
 
 .navbar li a{
+    float:left;
+    font-size: 16px;
+   
     color: white;
-   padding: 15px 20px;
+   padding: 14px 16px;
     display: block;
     text-decoration: none;
 }
 
+/*Submenustyling*/
+
+.dropdown {
+    position: relative;         /*anchor for absolut submenu . Stays in position(fiexed)*/
+}
+.navbar .submenu{
+    display: none;
+    position: absolute;         /*takes out menu of document flow*/
+    background: #444;
+    min-width: 150px;
+    top: 45px;
+    left: 0;
+}
+
+/*show submenu on hoover*/
+.dropdown:hover .submenu{
+    display:block;
+}
+
+.navbar ul:hover {
+    color: red;
+}
+
+.submenu li{
+    width: 100%;
+}
